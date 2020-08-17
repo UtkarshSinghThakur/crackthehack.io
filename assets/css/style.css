@@ -1135,3 +1135,18 @@ section .container {
 .term a:hover {
   color: #FFFF48;
 }
+
+.frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border:none;
+}
+
+#iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
