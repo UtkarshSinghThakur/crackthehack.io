@@ -861,8 +861,11 @@ section .container {
 .contact .info-box {
   color: #444444;
   padding: 20px;
-  width: 100%;
+  width: 715px;
   background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding-top: 35px;
+  margin-top: 22px;
 }
 
 .contact .info-box i.bx {
@@ -1134,4 +1137,283 @@ section .container {
 
 .term a:hover {
   color: #FFFF48;
+}
+
+
+/*--------------------------------------------------------------
+# Contact-Form
+--------------------------------------------------------------*/
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.wrapper{
+  width: 715px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+  background: rgba(255, 255, 255, 0.1);
+}
+.wrapper header{
+  font-size: 22px;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper form{
+  margin: 35px 30px;
+}
+.wrapper form.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+form .dbl-field{
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+.dbl-field .field{
+  height: 50px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+.wrapper form i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #ccc;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  box-shadow: 1px 2px 4px 2px gray;
+}
+.field input::placeholder,
+.message textarea::placeholder{
+  color: black;
+  font-family: cursive;
+  text-decoration-color: none;
+}
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 2px solid #0D6EFD;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: #0D6EFD;
+}
+form .message{
+  position: relative;
+}
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 15px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.message textarea:focus{
+  padding-top: 14px;
+}
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #0D6EFD;
+  transition: background 0.3s ease;
+}
+.button-area button:hover{
+  background: #025ce3;
+}
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+@media (max-width: 600px){
+  .wrapper header{
+    text-align: center;
+  }
+  .wrapper form{
+    margin: 35px 20px;
+  }
+  form .dbl-field{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  form .dbl-field .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  form .message textarea{
+    resize: none;
+  }
+  form .button-area{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+    padding: 11px 0;
+    font-size: 16px;
+  }
+  .button-area span{
+    margin: 20px 0 0;
+    text-align: center;
+  }
+}
+
+/*--------------------------------------------------------------
+# Submit-Form
+--------------------------------------------------------------*/
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*--------------------------------------------------------------
+# Open-Form
+--------------------------------------------------------------*/
+body {
+  background-color: #91CCC2;
+}
+
+.container1 {
+  width: 250px;
+  color: white;
+  font-size: 1rem;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  margin-bottom: 40px;
+}
+
+.button1 {
+  font-size: 1.5rem;
+  border: 2px solid white;
+  border-radius: 100px;
+  width: 43px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.icon1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.button1:hover {
+  width: 180px;
+  background-color: black;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  color: #18d26e;
+  transition: 0.3s;
+  height: 45px;
+  border-color: gray;
+  box-shadow: 1px 0px 4px 5px gray;
+}
+
+.button1:active {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.05s;
+}
+.icon1:hover{
+  color: #18d26e;
+}
+
+/*--------------------------------------------------------------
+# img
+--------------------------------------------------------------*/
+.ds{
+
+  width:450px;
+  height: auto;
+  margin-left: -60px;
+
+}
+.ds:hover{
+  transform: scale(1.2) rotate(14deg);
+  margin-left: -30px;
 }
