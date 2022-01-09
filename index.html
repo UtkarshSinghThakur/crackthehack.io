@@ -22,7 +22,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -89,7 +90,7 @@
             <div class="col-lg-6">
               <ul>
                 <li><i class="icofont-rounded-right"></i> <strong>Project :</strong> <a href="https://github.com/CrackTheHack" style="text-decoration: none;" target="_blank"><img src="assets/img/git.png" width="31px" style="margin-bottom: 10px;margin-left: 4px"></a></li>
-                <li><i class="icofont-rounded-right"></i> <strong>Ping Me :</strong><a href="https://www.crackthehack-contact.ml/?i=1" target="_blank"><img src="assets/img/email.jpg" width="35px" style="margin-bottom: 15px;margin-left: 4px"></li></a>
+                <li><i class="icofont-rounded-right"></i> <strong>Ping Me :</strong><a href="#contact" target="_blank"><img src="assets/img/email.jpg" width="35px" style="margin-bottom: 15px;margin-left: 4px"></li></a>
                 <li><i class="icofont-rounded-right"></i> <strong>Freelance :</strong> Available</li>
               </ul>
             </div>
@@ -216,7 +217,17 @@
 
       <div class="section-title">
         <h2>Resume</h2>
-        <p class="CMR">Check My Resume<br><a href="assets/Resume.docx" download><button class="btn btn-primary" style="margin-top: 20px"><i class="fa fa-download"></i> Download</button></a></p>
+        <p class="CMR">Check My Resume<br>
+          <a href="assets/Resume.docx" download>
+              <div class="container1">
+                  <div class="button1">
+                      <div class="icon1">
+                          <i class="fa fa-floppy-o" style="margin-left: 10px"><span style="margin-left: 20px">Download</span></i>
+                              </div>
+                        </div>
+               </div>
+            </a>
+          </p>
       </div>
 
       <div class="row">
@@ -554,11 +565,28 @@ Web Penetration testing<br>VAPT<br>Bug Bounty Hunting.
 
       <div class="row mt-2">
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Ping Me :-
-            <a href="https://www.crackthehack-contact.ml" target="_blank"><button class="btn btn-danger">Contact Form</button></a></h3>
-          </div>
+          <div class="wrapper">
+    <form action="https://formsubmit.co/utkarshbarethiya124@gmail.com" method="POST">
+      <div class="dbl-field">
+        <div class="field"> 
+          <input type="text" name="name" placeholder="Enter your name" required autocomplete="off" minlength="3" maxlength="30">
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="email" name="email" placeholder="Enter your email" required autocomplete="off" minlength="12" maxlength="40">
+          <i class='fas fa-envelope'></i>
+        </div>
+      </div>
+      <div class="message">
+        <textarea placeholder="Write your message" name="message" required autocomplete="off" minlength="3" maxlength="500"></textarea>
+        <i class="material-icons">message</i>
+      </div>
+      <div style="text-align: center;">
+        <br>
+          <button class="glow-on-hover" type="submit" name="submit">Submit</button>
+        </div>
+    </form>
+  </div>
         </div>
         <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
           <div class="info-box">
@@ -570,7 +598,9 @@ Web Penetration testing<br>VAPT<br>Bug Bounty Hunting.
               <a href="https://www.instagram.com/utkarsh_.singh.__" target="_blank" class="instagram"><i class="icofont-instagram"></i></a>
               <a href="https://www.linkedin.com/in/utkarsh-barethiya-2562b5220" target="_blank" class="linkedin"><i class="icofont-linkedin"></i></a>
             </div>
-
+            <div class="wrap">
+             <img src="assets\img\deadsec.png" class="ds">
+             </div>
           </div>
         </div>
       </div>
