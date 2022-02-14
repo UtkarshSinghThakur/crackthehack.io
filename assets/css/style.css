@@ -1200,7 +1200,7 @@ form .message textarea{
 .field input::placeholder,
 .message textarea::placeholder{
   color: black;
-  font-family: cursive;
+  font-family: sans-serif;
   text-decoration-color: none;
 }
 .field input:focus,
