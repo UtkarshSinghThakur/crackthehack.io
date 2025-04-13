@@ -1,6 +1,3 @@
-User-agent: *
-Disallow: /
-
 User-agent: ia_archiver
 Disallow: /
 
@@ -28,8 +25,5 @@ Disallow: /
 User-agent: Yandex
 Disallow: /
 
-User-agent: Bingbot
-Disallow: /
-
-User-agent: Googlebot
-Disallow: /
+User-agent: *
+Disallow:
