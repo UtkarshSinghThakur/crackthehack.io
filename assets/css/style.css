@@ -439,6 +439,19 @@ section .container {
   margin-bottom: 0;
 }
 
+.about-me .content p,
+.about-me .content ul li {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+@media (max-width: 575px) {
+  .about-me .content p,
+  .about-me .content ul li {
+    text-align: left;
+  }
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
