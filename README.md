@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/img/icon.png" alt="Cyber-World" width="80">
+  <img src="assets/img/icon..png" alt="Cyber-World" width="80">
 </p>
 
 <h1 align="center">🛡️ Cyber-World</h1>
